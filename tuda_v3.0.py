@@ -135,7 +135,6 @@ def get_button_list(msgid):
     b15=f"#message-accessories-{msgid} .container-2xsjOj:nth-child(5) .component-1IAYeC:nth-child(3)"
     blistcss=[b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15]
     choosen_buttons=random.sample(blistcss,3)
-    print(choosen_buttons)
     buttons=[]
     for i in choosen_buttons:
         buttons.append(driver.find_element(By.CSS_SELECTOR,i))
